@@ -4,8 +4,8 @@
   "version": "0.2.1",
   "type": "module",
   "scripts": {
-    "start": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "start": "node init && vite --host 0.0.0.0",
+    "build": "node init && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "bun --cwd=.. run typecheck",

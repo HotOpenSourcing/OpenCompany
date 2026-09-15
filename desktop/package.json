@@ -8,8 +8,8 @@
   "homepage": "https://opencompany.sh",
   "main": "./out/main/index.js",
   "scripts": {
-    "dev": "electron-vite dev",
-    "build": "electron-vite build",
+    "dev": "node init && electron-vite dev",
+    "build": "node init && electron-vite build",
     "preview": "electron-vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "fetch-runtimes": "bun run scripts/fetch-runtimes.ts",

@@ -5,12 +5,13 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "bun build src/index.ts --target=bun --outfile=dist/index.js",
-    "start": "bun dist/index.js",
-    "dev": "bun --watch src/index.ts"
+    "build": "node init && bun build src/index.ts --target=bun --outfile=dist/index.js",
+    "start": "node init && bun dist/index.js",
+    "dev": "node init && bun --watch src/index.ts"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",

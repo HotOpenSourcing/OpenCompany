@@ -71,10 +71,10 @@
     "server/nodejs"
   ],
   "scripts": {
-    "start": "python -m cli start",
-    "dev": "python -m cli dev",
+    "start": "node init && python -m cli start",
+    "dev": "node init && python -m cli dev",
     "serve": "python -m cli serve",
-    "start:temporal": "cross-env TEMPORAL_ENABLED=true python -m cli start",
+    "start:temporal": "node init && cross-env TEMPORAL_ENABLED=true python -m cli start",
     "client:start": "bun --cwd=client run start",
     "python:start": "cd server && uv run python main.py",
     "python:daemon": "cd server && cross-env HOST=0.0.0.0 uv run python main.py",
@@ -82,7 +82,7 @@
     "temporal:stop": "temporal stop",
     "temporal:status": "temporal status",
     "temporal:worker": "cd server && uv run python -m services.temporal.worker",
-    "build": "python -m cli build",
+    "build": "node init && python -m cli build",
     "clean": "python -m cli clean",
     "stop": "python -m cli stop",
     "test": "bun run test:backend && bun run test:frontend",

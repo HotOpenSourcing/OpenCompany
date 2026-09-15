@@ -59,7 +59,6 @@ server/data/
 # =============================================================================
 # Editor and IDE
 # =============================================================================
-.vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea
@@ -197,3 +196,4 @@ desktop/vendor/
 desktop/build/icon.png
 desktop/test-results/
 desktop/playwright-report/
+config.bat
